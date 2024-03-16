@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extraction Result</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Extraction Result</h2>
+        <div class="card mt-3">
+            <div class="card-body">
+                <p class="card-text"><strong>Invoice Number:</strong> {{ data.invoice_number }}</p>
+                <p class="card-text"><strong>Date:</strong> {{ data.date }}</p>
+                <p class="card-text"><strong>Total Amount:</strong> ${{ data.total_amount }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
